@@ -15,6 +15,7 @@ Of course, this is a relatively trivial example, but we can also explore more co
 In the simple example below, we plot the accuracy on the validation set from tuning the SVM hyperparameter `C` on the Pima Indians dataset. The example uses 50 iteration random search and 3-fold CV:
 
 {% highlight R %}
+library(mlr)
 ps = makeParamSet(makeNumericParam("C", lower = .01, upper = 5))
 ctrl = makeTuneControlRandom(maxit = 50L)
 rdesc = makeResampleDesc("CV", iters = 3L)
