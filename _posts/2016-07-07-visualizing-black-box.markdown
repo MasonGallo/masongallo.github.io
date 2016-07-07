@@ -15,3 +15,5 @@ Partial dependency plots to the rescue! Partial dependency plots provide a means
 Check out the [Paper](http://arxiv.org/abs/1309.6392) with implementation. Highly recommended reading!
 
 Implementations are available in the [original R package](https://github.com/kapelner/ICEbox), the R machine learning package, [mlr](http://mlr-org.github.io/mlr-tutorial/devel/html/partial_dependence/index.html), as well as [scikit-learn](http://scikit-learn.org/stable/auto_examples/ensemble/plot_partial_dependence.html). 
+
+![partial dependence plot](/assets/partial_dependence.svg)
