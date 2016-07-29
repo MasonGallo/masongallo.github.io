@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cosine Similarity"
+title:  "Implementing and Understanding Cosine Similarity"
 date:   2016-07-29 10:10:44 -0400
 categories: machine learning, python
 ---
@@ -33,13 +33,17 @@ A naive implementation of cosine similarity with some Python written for intuiti
 Let's say we have 3 sentences that we want to determine the similarity:
 
 sentence_m = "Mason really loves food"
+
 sentence_h = "Hannah loves food too"
+
 sentence_w = "The whale is food"
 
 For this example don't care about the "meaning" of each word, we're just going to compute counts:
 
 sentence_m: Mason=1, really=1, loves=1, food=1, too=0, Hannah=0, The=0, whale=0, is=0 
+
 sentence_h: Mason=0, really=0, loves=1, food=1, too=1, Hannah=1, The=0, whale=0, is=0  
+
 sentence_w: Mason=0, really=0, loves=0, food=1, too=0, Hannah=0, The=1, whale=1, is=1
 
 Looking at our cosine similarity equation above, we need to compute the dot product between two sentences and the magnitude of each sentence we're comparing.
@@ -48,8 +52,8 @@ Looking at our cosine similarity equation above, we need to compute the dot prod
 import numpy as np
 
 def cos_sim(a, b):
-	"""Takes 2 vectors a, b and returns the cosine similarity according to the 
-	definition of the dot product
+	"""Takes 2 vectors a, b and returns the cosine similarity according 
+	to the definition of the dot product
 	"""
 	dot_product = np.dot(a, b)
 	norm_a = np.linalg.norm(a)
@@ -66,4 +70,7 @@ print(cos_sim(sentence_m, sentence_h)) # 0.5
 print(cos_sim(sentence_m, sentence_w)) # 0.25
 {% endhighlight %}
 
-Final thought to hopefully reinforce the use of cosine similarity: there's only 1 way to be parallel to a given vector, but there may be many ways to be orthogonal to a given vector.
+Final thought questions to ponder:
+
+- How many ways can a given vector be parallel to another?
+- How many ways can a given vector be orthogonal to another?
