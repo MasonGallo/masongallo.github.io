@@ -2,7 +2,7 @@
 layout: post
 title: Exploring and Understanding Hyperparameter Tuning
 date:   2016-08-24 10:10:44 -0400
-categories: machine learning, R
+categories: machine learning R
 ---
 
 Learners use hyperparameters to achieve better performance on particular 
