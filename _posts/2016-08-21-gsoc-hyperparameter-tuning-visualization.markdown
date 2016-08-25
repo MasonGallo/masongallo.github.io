@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Exploring and Understanding Hyperparameter Tuning
-author: mason
+date:   2016-08-24 10:10:44 -0400
+categories: machine learning, R
 ---
 
 Learners use hyperparameters to achieve better performance on particular 
@@ -10,8 +11,6 @@ the relationship between changing the hyperparameter and performance might not
 be obvious. [mlr](http://github.com/mlr-org/mlr) provides several new 
 implementations to better understand what happens when we tune hyperparameters 
 and to help us optimize our choice of hyperparameters.
-
-<!--more-->
 
 # Background
 
