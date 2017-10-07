@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine Learning In Production: Pipelines
+title: Machine Learning In Production - Pipelines
 date:   2017-10-07 12:45:15 -0400
 categories: machine learning, python
 ---
